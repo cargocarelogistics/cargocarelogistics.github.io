@@ -2096,6 +2096,30 @@ nav.on-hero::before { content:''; position:absolute; inset:0 0 -40px; z-index:-1
   .home-trust-strip .trust-divider { display:none !important; }
   .hero .hx-btns .cc-pill { font-size:14px; }
 }
+
+/* ===== Phone menu: dark dropdown, readable links, X icon ===== */
+.nav-quote-m { display:none; }
+.la-text { white-space:nowrap; }
+@media (max-width:900px) {
+  .nav-cta { display:none !important; }
+  nav.menu-open { background:rgba(10,10,10,.96) !important; }
+  nav.menu-open::before { display:none; }
+  nav.menu-open .la-name, nav.menu-open .hamburger span { color:#fff; }
+  nav.menu-open .hamburger span { background:#fff !important; }
+  nav.menu-open .staff-email-icon { color:#fff !important; }
+  nav.menu-open .hero-clock { color:rgba(255,255,255,.75); border-color:rgba(255,255,255,.18); background:rgba(255,255,255,.08); }
+  nav.menu-open .hero-clock b { color:#fff; }
+  nav .nav-links { display:none !important; }
+  nav.menu-open .nav-links { display:flex !important; flex-direction:column; position:fixed; top:68px; left:0; right:0; gap:0; margin:0; padding:8px 24px 24px; list-style:none; background:rgba(10,10,10,.96); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); border-bottom:2px solid var(--orange); box-shadow:0 20px 40px rgba(0,0,0,.35); }
+  nav.menu-open .nav-links li a { display:block; padding:16px 2px; font-size:18px !important; font-weight:600; color:#fff !important; border-bottom:1px solid rgba(255,255,255,.08); }
+  nav.menu-open .nav-links li a::after { display:none; }
+  nav.menu-open .nav-quote-m { display:block; margin-top:18px; }
+  nav.menu-open .nav-quote-m a { text-align:center; border:0 !important; border-radius:999px; background:linear-gradient(to bottom right,#f59b2b,#a85806); }
+  .hamburger span { transition:transform .3s ease, opacity .2s ease; }
+  nav.menu-open .hamburger span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+  nav.menu-open .hamburger span:nth-child(2) { opacity:0; }
+  nav.menu-open .hamburger span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+}
 </style>
 </head>
 <body><!-- NAV -->
@@ -2118,12 +2142,13 @@ nav.on-hero::before { content:''; position:absolute; inset:0 0 -40px; z-index:-1
     <li><a href="#services">Services</a></li>
     <li><a href="#clients">Gallery</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li class="nav-quote-m"><a href="#contact">Get Quote</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Get Quote</a>
   <a href="https://webmail.cargocare.com.my/" target="_blank" rel="noopener noreferrer" class="staff-email-icon" title="Staff Email">
     <i class="fa-solid fa-envelope"></i>
   </a>
-  <div class="hamburger" onclick="toggleMenu()">
+  <div class="hamburger" onclick="toggleMenu()" role="button" tabindex="0" aria-label="Menu" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMenu();}">
     <span></span><span></span><span></span>
   </div>
   </div>
@@ -2660,26 +2685,17 @@ nav.on-hero::before { content:''; position:absolute; inset:0 0 -40px; z-index:-1
 
   // ---- Mobile Menu ----
   function toggleMenu() {
-    const links = document.querySelector('.nav-links');
-    const cta = document.querySelector('.nav-cta');
-    if (!links) return;
-    if (links.style.display === 'flex') {
-      links.style.display = 'none';
-      if (cta) cta.style.display = 'none';
-    } else {
-      links.style.display = 'flex';
-      links.style.flexDirection = 'column';
-      links.style.position = 'absolute';
-      links.style.top = '68px';
-      links.style.left = '0';
-      links.style.width = '100%';
-      links.style.background = 'rgba(255,255,255,0.98)';
-      links.style.padding = '20px 40px';
-      links.style.gap = '20px';
-      links.style.borderBottom = '2px solid var(--orange)';
-      if (cta) cta.style.display = 'block';
-    }
+    const nav = document.querySelector('nav');
+    const open = nav.classList.toggle('menu-open');
+    document.querySelector('.hamburger').setAttribute('aria-expanded', String(open));
   }
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      const nav = document.querySelector('nav');
+      nav.classList.remove('menu-open');
+      document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+    });
+  });
 
   // ---- Logistics Operations Gallery ----
   const galleryData = {
