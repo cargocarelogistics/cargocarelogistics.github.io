@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cargo Care Logistics Sdn Bhd — Logistics &amp; Forwarding since 2006</title>
+<meta name="description" content="Cargo Care Logistics Sdn Bhd — 20+ years in logistics and forwarding. Land, air and sea freight, door to door, vehicle shipment and oil &amp; gas logistics across Malaysia and worldwide." />
+<meta name="theme-color" content="#0a0a0a" />
+<link rel="icon" href="logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+/* ===== v22 (dark premium) — Cargo Care Logistics ===== */
+:root{
+  --background:#ffffff; --foreground:#111111; --ink:#0a0a0a;
+  --muted:#8d8d8d; --subtle:#b6b6b6; --line:#e6e5e2;
+  --surface:#f1f0ee; --surface-2:#e3e2df;
+  --accent:#d4760a; --accent-from:#f59b2b; --accent-to:#a85806;
+  --radius-pill:9999px; --radius-card:2rem; --radius-card-sm:1.25rem; --radius-control:.875rem;
+  --ease:cubic-bezier(.16,1,.3,1); --ease-line:cubic-bezier(.215,.61,.355,1);
+  --ease-word:cubic-bezier(.165,.84,.44,1); --spring:cubic-bezier(.34,1.56,.64,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased}
+body{background:var(--background);color:var(--foreground);font-family:'Onest',sans-serif;overflow-x:hidden;line-height:1.5}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+ul{list-style:none}
+img{display:block;max-width:100%}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* rem-based adaptive grid */
+@media (max-width:1920px){html{font-size:.833333vw}}
+@media (max-width:1440px){html{font-size:1.111111vw}}
+@media (max-width:1024px){html{font-size:1.5625vw}}
+@media (max-width:640px){html{font-size:4.444444vw}}
+
+.shell{max-width:88rem;margin-inline:auto;padding-inline:1.25rem}
+.i{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.i.fill{fill:currentColor;stroke:none}
+.skip{position:fixed;left:1rem;top:-5rem;z-index:130;border-radius:.875rem;background:var(--ink);padding:.5rem 1rem;font-size:.875rem;color:#fff}
+.skip:focus{top:1rem}
+
+/* reveals */
+.js [data-r]{opacity:0;transform:translateY(var(--y,24px)) scale(var(--s,1));transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0ms)}
+.js [data-r].in{opacity:1;transform:none}
+.ln{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em}
+.ln>span{display:block}
+.js .ln>span{transform:translateY(108%);opacity:0;transition:transform .9s var(--ease-line),opacity .9s var(--ease-line);transition-delay:var(--d,0ms)}
+.js .lines.in .ln>span{transform:none;opacity:1}
+.js .words .w{display:inline-block;opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease-word),transform .7s var(--ease-word)}
+.js .words.in .w{opacity:1;transform:none}
+
+/* shared */
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.875rem;font-weight:500;color:rgba(255,255,255,.7)}
+.eyebrow::before{content:"";width:.375rem;height:.375rem;border-radius:50%;background:var(--accent)}
+.eyebrow.light{color:rgba(255,255,255,.75)}
+.eyebrow.boxed{border:1px solid var(--line);border-radius:9999px;padding:.375rem 1rem}
+.h2{font-size:2.25rem;font-weight:600;letter-spacing:-.02em;line-height:1.05}
+.pill{display:inline-flex;align-items:center;gap:.75rem;border-radius:9999px;font-size:.875rem;font-weight:500;padding:.875rem 1.75rem;transition:transform .4s var(--spring)}
+.pill.arrow{padding:.375rem .375rem .375rem 1.5rem}
+.pill .badge{width:2.25rem;height:2.25rem;display:grid;place-items:center;border-radius:50%;font-size:1rem;background:var(--ink);color:#fff}
+.pill .badge .i{transition:transform .4s var(--spring)}
+.pill.dark{background:var(--ink);color:#fff}
+.pill.dark .badge{background:#fff;color:var(--ink)}
+.pill.light{background:var(--surface);color:var(--foreground)}
+.pill.outline{border:1px solid var(--line);color:var(--foreground)}
+.pill.accent{background:linear-gradient(to bottom right,var(--accent-from),var(--accent-to));color:#fff}
+.pill.accent .badge{background:#fff;color:var(--ink)}
+.pill.glass{border-radius:9999px;border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.06);backdrop-filter:blur(6px)}
+.pill.glass .badge{background:#fff;color:var(--ink)}
+.chip{display:inline-flex;border:1px solid var(--line);border-radius:9999px;padding:.5rem 1rem;font-size:.875rem}
+.chip.light{border-color:rgba(255,255,255,.25);color:#fff}
+.alink span{display:inline-block;opacity:.65;transition:transform .35s var(--spring),opacity .3s}
+@media (hover:hover){
+  .pill:hover{transform:scale(1.04)}
+  .pill:hover .badge .i{transform:translate(2px,-2px)}
+  .pill:hover .badge .i.right{transform:translateX(3px)}
+  .alink:hover span{transform:translateX(4px);opacity:1}
+}
+
+/* loader */
+#loader{position:fixed;inset:0;z-index:120;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;background:var(--ink);color:#fff;border-radius:0 0 2rem 2rem;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+#loader.out{transform:translateY(-100%)}
+.ld-center{display:flex;flex-direction:column;align-items:center;gap:1.25rem;text-align:center;transition:opacity .5s,transform .5s}
+#loader.out .ld-center,#loader.out .ld-prog{opacity:0;transform:translateY(-12px)}
+.ld-brand{display:flex;align-items:center;gap:.75rem;font-weight:600;font-size:1.5rem;letter-spacing:.02em}
+.ld-brand b{color:var(--accent-from);font-weight:700}
+.ld-center p{max-width:26ch;font-size:.875rem;color:rgba(255,255,255,.55)}
+.ld-prog{width:min(22rem,72vw);display:flex;flex-direction:column;gap:.75rem;transition:opacity .5s,transform .5s}
+.ld-track{height:1px;background:rgba(255,255,255,.15)}
+.ld-fill{height:100%;width:0;background:var(--accent-from);transition:width .1s ease-out}
+.ld-row{display:flex;justify-content:space-between;font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.45)}
+.ld-row b{font-weight:500;font-variant-numeric:tabular-nums;color:rgba(255,255,255,.8)}
+.logo-dot{display:block;border-radius:50%;background:#fff;object-fit:cover;flex:none}
+
+/* header */
+#header{position:absolute;inset-inline:0;top:0;z-index:50;color:#fff}
+#header .shell{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.25rem}
+.brand{display:flex;align-items:center;gap:.625rem;font-size:1.125rem;font-weight:700;letter-spacing:.03em;transition:transform .4s var(--spring)}
+.brand b{color:var(--accent-from)}
+.brand small{display:block;font-size:.55rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;opacity:.6;margin-top:.1rem}
+.nav-main{display:none}
+.nav-main ul{display:flex;gap:2rem;font-size:.875rem;font-weight:500}
+.nav-main button span{display:inline-block;opacity:.8;transition:transform .35s var(--spring),opacity .3s}
+.hd-right{display:flex;align-items:center;gap:.75rem}
+.glass{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);backdrop-filter:blur(8px);border-radius:.875rem}
+.clock{display:none;align-items:center;gap:.75rem;padding:.5rem .75rem;font-size:.75rem;color:rgba(255,255,255,.75)}
+.clock em{font-style:normal;color:rgba(255,255,255,.5)}
+.clock b{font-weight:500;color:#fff;font-variant-numeric:tabular-nums}
+.clock b.t{min-width:3.5rem}
+.clock i{font-style:normal;color:rgba(255,255,255,.3)}
+.menu-btn{transition:background .3s}
+.menu-btn>span{display:flex;align-items:center;gap:.5rem;padding:.5rem 1rem;font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.05em;transition:transform .4s var(--spring)}
+.menu-btn .i{font-size:.875rem}
+.menu-btn .lbl{display:none}
+@media (hover:hover){
+  .brand:hover{transform:scale(1.04)}
+  .nav-main button:hover span{transform:translateY(-2px);opacity:1}
+  .menu-btn:hover{background:rgba(255,255,255,.18)}
+  .menu-btn:hover>span{transform:scale(1.05)}
+}
+
+/* hero */
+#home{position:relative;isolation:isolate;overflow:hidden;border-radius:0 0 2rem 2rem;background:var(--ink);color:#fff}
+.liquid{position:absolute;inset:0;z-index:0}
+.liquid img,.liquid canvas{position:absolute;inset:0;width:100%;height:100%}
+.liquid img{object-fit:cover;filter:brightness(.72) saturate(1.1)}
+.liquid canvas{pointer-events:none}
+/* video reels + cloud transition between clips */
+.reel{position:absolute;inset:0;overflow:hidden}
+.reel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
+.reel video.on{opacity:1}
+.liquid video{filter:brightness(.72) saturate(1.1)}
+.clouds{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.clouds::before{content:"";position:absolute;inset:0;background:rgba(228,234,241,.92);opacity:0;transition:opacity .9s ease}
+.clouds.in::before{opacity:1;transition:opacity 1s ease .35s}
+.clouds i{position:absolute;left:var(--x);top:var(--y);width:var(--s);aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:radial-gradient(closest-side,#fff,rgba(238,242,247,.8) 45%,rgba(238,242,247,0));filter:blur(14px);opacity:0;transform:translate(var(--dx),var(--dy)) scale(.45);transition:opacity 1.1s ease,transform 1.4s cubic-bezier(.25,.7,.3,1)}
+.clouds.in i{opacity:1;transform:none}
+.clouds.out i{opacity:0;transform:translate(calc(var(--dx) * -1.4),calc(var(--dy) * -1.4)) scale(1.7);transition-duration:1.5s,1.8s}
+#contact{position:relative;isolation:isolate;overflow:hidden;padding-top:4rem}
+.sec-bg{position:absolute;inset:0;z-index:-1}
+.sec-bg video{width:100%;height:100%;object-fit:cover}
+.sec-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,#070707,rgba(7,7,7,.74) 22%,rgba(7,7,7,.74) 78%,#070707)}
+.vignette{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to right,rgba(10,10,10,.72),rgba(10,10,10,.15) 62%,rgba(10,10,10,.35)),linear-gradient(to bottom,rgba(10,10,10,.62),transparent 32%,transparent 58%,rgba(10,10,10,.82))}
+.watermark{pointer-events:none;position:absolute;inset-inline:0;z-index:1;text-align:center;user-select:none;font-weight:700;line-height:1;white-space:nowrap;font-size:3rem}
+.hero-wm{bottom:5.5rem;color:rgba(255,255,255,.07)}
+.hero-grid{position:relative;z-index:20;display:flex;flex-direction:column;gap:2.5rem;padding-top:7.5rem;padding-bottom:4rem}
+.hero-left{display:flex;flex-direction:column;gap:1.75rem;align-items:flex-start}
+.hero-left h1{font-size:2.25rem;font-weight:600;line-height:1;letter-spacing:-.02em;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.hero-left h1 em{font-style:normal;background:linear-gradient(to right,var(--accent-from),#ffc978);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-desc{max-width:34rem;font-size:1rem;line-height:1.6;color:rgba(255,255,255,.75)}
+.modes{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;font-size:.875rem;font-weight:500;color:rgba(255,255,255,.8)}
+.modes span{display:inline-flex;align-items:center;gap:.4rem}
+.modes .i{color:var(--accent-from);font-size:1rem}
+.modes i{font-style:normal;opacity:.35}
+.cta-row{display:flex;flex-wrap:wrap;gap:.75rem}
+.hero-right{display:flex;flex-direction:column;align-items:flex-start;gap:2rem}
+.hcard{width:100%;max-width:24rem;border-radius:1.25rem;background:rgba(255,255,255,.12);padding:.5rem;box-shadow:0 0 0 1px rgba(255,255,255,.18),0 20px 50px rgba(0,0,0,.35);backdrop-filter:blur(14px)}
+.hcard-row{display:flex;gap:.5rem;cursor:pointer;border-radius:.875rem}
+.hcard-tile{aspect-ratio:1;width:6rem;display:grid;place-items:center;border-radius:.875rem;background:#fff;overflow:hidden;flex:none}
+.hcard-tile img{width:86%;height:86%;object-fit:contain}
+.hcard-panel{flex:1;border-radius:.875rem;background:rgba(10,10,10,.55);padding:.75rem;display:flex;flex-direction:column;justify-content:space-between;gap:.5rem}
+.hcard-slot{position:relative;min-height:3.25rem;overflow:hidden}
+.hcard-item{position:absolute;inset:0;transition:opacity .45s var(--ease),transform .45s var(--ease)}
+.hcard-item small{display:block;font-size:.65rem;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.5)}
+.hcard-item b{display:block;max-width:11rem;font-size:.875rem;font-weight:500;line-height:1.35;margin-top:.15rem}
+.hcard-foot{display:flex;align-items:center;justify-content:space-between}
+.dots{display:flex;gap:.25rem}
+.dots i{height:.25rem;width:.375rem;border-radius:9999px;background:rgba(255,255,255,.25);transition:all .3s}
+.dots i.on{width:1rem;background:var(--accent-from)}
+.hcard-nav{display:flex;gap:.375rem}
+.hcard-nav button{width:1.75rem;height:1.75rem;display:grid;place-items:center;border-radius:50%;background:#fff;color:rgba(255,255,255,.7);font-size:.8rem}
+.hcard-nav button:hover{color:#111}
+.offices{width:100%;max-width:24rem}
+.offices p{margin-bottom:.75rem;font-size:.75rem;font-weight:500;color:rgba(255,255,255,.5)}
+.offices ul{display:grid;grid-template-columns:repeat(2,1fr);column-gap:1rem;row-gap:.75rem}
+.offices button{display:flex;align-items:center;gap:.375rem;font-size:.75rem;color:#fff;opacity:.75;text-align:left;transition:transform .35s var(--spring),opacity .3s}
+.offices .i{font-size:.875rem;color:var(--accent-from)}
+@media (hover:hover){.offices button:hover{transform:translateY(-2px);opacity:1}}
+.statusbar{position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:.75rem;border-top:1px solid rgba(255,255,255,.14);padding-block:1.25rem;font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.025em;color:rgba(255,255,255,.65)}
+.statusbar .mid{display:none}
+.statusbar .scroll{display:inline-flex;gap:.5rem}
+.statusbar .scroll i{font-style:normal;animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(4px)}}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr;align-items:center;gap:3rem;padding-block:5rem}
+.globe-block{position:relative;min-height:14rem;display:flex;flex-direction:column;justify-content:space-between}
+.globe-bg{position:absolute;left:-1rem;top:50%;transform:translateY(-50%);font-size:12rem;color:rgba(255,255,255,.08);stroke-width:1}
+.globe-note{position:relative;display:flex;align-items:center;gap:.75rem;font-size:.875rem;color:rgba(255,255,255,.7)}
+.globe-note .i{font-size:1.5rem;color:var(--accent);stroke-width:1.4}
+.globe-note span{max-width:16rem}
+.about-right{display:flex;flex-direction:column;gap:2.5rem}
+.about-right h2{font-size:1.5rem;font-weight:500;line-height:1.35;letter-spacing:-.01em}
+.about-right h2 .m{color:var(--muted)}
+.about-foot{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.5rem;border-top:1px solid var(--line);padding-top:1.5rem}
+.about-foot small{display:block;font-size:.875rem;color:rgba(255,255,255,.45);margin-bottom:.5rem}
+.about-foot b{font-size:1rem;font-weight:600}
+.pillars{display:grid;grid-template-columns:1fr;gap:1rem;padding-bottom:2.5rem}
+.pillar{height:100%;border-radius:1.25rem;background:var(--surface);padding:1.75rem;transition:transform .45s var(--spring),background .3s}
+.pillar .ic{width:3rem;height:3rem;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:var(--accent-from);font-size:1.25rem;margin-bottom:1.5rem}
+.pillar .ic .i{stroke-width:1.6}
+.pillar h3{font-size:1.25rem;font-weight:600;letter-spacing:-.01em;margin-bottom:.5rem}
+.pillar p{font-size:.875rem;color:rgba(255,255,255,.6);line-height:1.6}
+@media (hover:hover){.pillar:hover{transform:translateY(-6px);background:var(--surface-2)}}
+
+/* band */
+.band{display:flex;flex-direction:column;gap:.75rem;padding-block:2.5rem}
+.band li{flex:1}
+.tile{display:grid;place-items:center;height:6rem;border-radius:9999px;font-size:1.875rem;font-weight:500;transition:transform .45s var(--spring)}
+.tile.t-light{background:var(--surface)}
+.tile.t-accent{background:linear-gradient(to bottom right,var(--accent-from),var(--accent-to));color:#fff}
+.tile.t-dark{background:var(--ink);color:#fff;font-size:2.25rem}
+.tile.t-ghost{background:rgba(241,240,238,.6);color:rgba(255,255,255,.35)}
+@media (hover:hover){.tile:hover{transform:scale(1.03)}}
+
+/* mission */
+.mv{padding-block:4rem}
+.mv-head{display:grid;gap:1.25rem;margin-bottom:3rem}
+.mv-head p{max-width:30rem;font-size:1rem;color:rgba(255,255,255,.6)}
+.mv-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+.mv-card{height:100%;border-radius:2rem;padding:2rem 1.5rem;background:var(--surface)}
+.mv-card.dark{background:var(--ink);color:#fff}
+.mv-card .tag{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:600}
+.mv-card.dark .tag{color:var(--accent-from)}
+.mv-card h3{font-size:1.875rem;font-weight:600;letter-spacing:-.02em;margin:.5rem 0 1.75rem}
+.mv-card li{display:flex;gap:1rem;padding-block:1rem;border-top:1px solid rgba(255,255,255,.1);font-size:1rem;line-height:1.5}
+.mv-card.dark li{border-color:rgba(255,255,255,.12);color:rgba(255,255,255,.85)}
+.mv-card li b{font-size:.875rem;font-weight:500;opacity:.4;width:1.75rem;flex:none;padding-top:.1rem}
+.quote{margin-top:1.5rem;border-radius:2rem;padding:3rem 1.5rem;text-align:center;color:#fff;background:linear-gradient(to bottom right,var(--accent-from),var(--accent-to));position:relative;overflow:hidden}
+.quote::before{content:"“";position:absolute;left:1.5rem;top:-2.5rem;font-size:16rem;line-height:1;font-weight:700;color:rgba(255,255,255,.14)}
+.quote blockquote{position:relative;font-size:1.5rem;font-weight:500;line-height:1.3;letter-spacing:-.01em}
+.quote cite{position:relative;display:block;margin-top:1.25rem;font-style:normal;font-size:.875rem;opacity:.8}
+
+/* services */
+.services{padding-block:5rem}
+.services .h2{margin:1.25rem 0 1rem;max-width:16ch}
+.services .intro{max-width:36rem;font-size:1rem;color:rgba(255,255,255,.6);margin-bottom:3rem}
+.srv{border-top:1px solid var(--line)}
+.srv:first-child{border-top:none}
+.srv-row{width:100%;display:flex;align-items:center;gap:1rem;border-radius:1.25rem;padding:1.5rem;text-align:left;background:rgba(241,240,238,0);transition:background .45s var(--ease),padding .45s var(--ease)}
+.srv-row .n{width:1.75rem;font-size:.875rem;font-weight:500;color:rgba(255,255,255,.4);flex:none}
+.srv-row h3{flex:1;font-size:1.5rem;font-weight:500;letter-spacing:-.01em;line-height:1.15}
+.srv-row p{display:none;max-width:22rem;font-size:.875rem;color:rgba(255,255,255,.55)}
+.srv-row .go{width:2.5rem;height:2.5rem;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:#fff;flex:none;transition:transform .4s var(--spring),background .3s}
+.srv.open .srv-row{background:var(--surface)}
+.srv.open .go{transform:rotate(135deg);background:var(--accent)}
+.srv-more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--ease)}
+.srv.open .srv-more{grid-template-rows:1fr}
+.srv-more>div{overflow:hidden}
+.srv-more .inr{padding:1.25rem 1.5rem 1.75rem}
+.srv-more .d{font-size:.875rem;color:rgba(255,255,255,.6);margin-bottom:1rem;max-width:36rem}
+.srv-more ul{display:flex;flex-wrap:wrap;gap:.5rem}
+@media (hover:hover){
+  .srv-row:hover{background:var(--surface);padding-left:2rem;padding-right:1.25rem}
+  .srv:not(.open) .srv-row:hover .go{transform:translateX(5px)}
+}
+
+/* operations */
+.ops{padding-block:2.5rem 5rem}
+.ops-head{display:flex;flex-direction:column;align-items:center;gap:1.25rem;text-align:center;margin-bottom:3rem}
+.ops-head .h2 em{font-style:normal;color:var(--accent)}
+.ops-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+.op{position:relative;display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch;width:100%;min-height:24rem;overflow:hidden;border-radius:2rem;background:var(--ink);padding:1.5rem;color:#fff;text-align:left;box-shadow:0 0 0 1px rgba(255,255,255,.05);transition:transform .5s var(--spring)}
+.op>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.op::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,10,10,.55),rgba(10,10,10,.05) 38%,rgba(10,10,10,.92))}
+.op-top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;font-size:.75rem;text-transform:uppercase;letter-spacing:.025em;color:rgba(255,255,255,.8)}
+.op-badge{width:2.75rem;height:2.75rem;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);box-shadow:0 0 0 1px rgba(255,255,255,.2);transition:transform .45s var(--spring),background .3s}
+.op-bot{position:absolute;z-index:2;inset-inline:1.5rem;bottom:1.5rem}
+.op-bot h3{font-size:1.5rem;font-weight:500;letter-spacing:-.01em}
+.op-bot p{margin-top:.5rem;max-width:28rem;font-size:.875rem;color:rgba(255,255,255,.7)}
+.op-bot .chip{margin-top:1.25rem;gap:.5rem;align-items:center}
+@media (hover:hover){
+  .op:hover{transform:translateY(-8px) scale(1.012)}
+  .op:hover>img{transform:scale(1.07)}
+  .op:hover .op-badge{transform:rotate(45deg) scale(1.08);background:var(--accent)}
+}
+
+/* stats */
+.stats-wrap{padding-bottom:5rem}
+.stats{border-radius:2rem;background:var(--ink);padding:3rem 1.5rem;color:#fff}
+.stats h2{margin-top:1rem;max-width:20ch;font-size:1.875rem;font-weight:500;letter-spacing:-.01em;line-height:1.15}
+.stats-grid{margin-top:3.5rem;display:grid;grid-template-columns:repeat(2,1fr);column-gap:2rem;row-gap:3rem}
+.stat b{display:block;font-size:3rem;font-weight:600;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
+.stat b i{font-style:normal;color:var(--accent-from)}
+.stat>span{display:block;margin-top:.75rem;font-size:.875rem;color:rgba(255,255,255,.55)}
+.promise{margin-top:3.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);display:grid;grid-template-columns:1fr;gap:1.5rem}
+.promise li>div{display:flex;gap:1rem;align-items:flex-start}
+.promise .ic{width:2.75rem;height:2.75rem;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.08);color:var(--accent-from);font-size:1.15rem;flex:none}
+.promise .ic .i{stroke-width:1.6}
+.promise h4{font-size:1rem;font-weight:600}
+.promise p{font-size:.875rem;color:rgba(255,255,255,.55);margin-top:.15rem}
+
+/* contact */
+.contact{padding-block:1rem 5rem;display:grid;grid-template-columns:1fr;gap:3rem}
+.contact-l{display:flex;flex-direction:column;align-items:flex-start;gap:1.5rem}
+.contact-l h2{font-size:3rem;font-weight:600;letter-spacing:-.03em;line-height:.95}
+.contact-l p{max-width:26rem;font-size:1rem;color:rgba(255,255,255,.6)}
+.cgrid{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.cgrid li>div{height:100%;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.cgrid small{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);font-weight:600;margin-bottom:.6rem}
+.cgrid address,.cgrid .v{font-style:normal;font-size:.95rem;line-height:1.65;color:rgba(255,255,255,.8)}
+.cgrid a{transition:color .2s}
+.cgrid a:hover{color:var(--accent)}
+
+/* footer */
+footer{position:relative;overflow:hidden;border-radius:2rem 2rem 0 0;background:var(--ink);color:#fff}
+footer .shell{position:relative;z-index:10;padding-top:5rem;padding-bottom:2.5rem}
+.f-cta{display:flex;flex-direction:column;gap:2rem;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:4rem}
+.f-cta h2{max-width:26ch;font-size:2.25rem;font-weight:600;letter-spacing:-.02em;line-height:1.05}
+.f-cols{display:grid;grid-template-columns:1fr;gap:3rem;padding-block:4rem}
+.f-brand{display:flex;align-items:center;gap:.625rem;font-size:1.125rem;font-weight:700;letter-spacing:.03em}
+.f-brand b{color:var(--accent-from)}
+.f-cols p{margin-top:1rem;max-width:20rem;font-size:.875rem;color:rgba(255,255,255,.55)}
+.f-cols h5{font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.025em;color:rgba(255,255,255,.4);margin-bottom:1rem}
+.f-cols li{font-size:.875rem;margin-bottom:.6rem}
+.f-legal{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:1rem;border-top:1px solid rgba(255,255,255,.1);padding-top:2rem;font-size:.75rem;color:rgba(255,255,255,.45);text-align:center}
+.foot-wm{bottom:-.4rem;z-index:0;color:rgba(255,255,255,.05)}
+
+/* overlays */
+.ov{position:fixed;inset:0;opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility 0s .4s}
+.ov.open{opacity:1;visibility:visible;transition:opacity .4s var(--ease),visibility 0s}
+#nav{z-index:115;display:flex;flex-direction:column;background:var(--ink);color:#fff;overflow-y:auto}
+.nv-top{display:flex;align-items:center;justify-content:space-between;padding-block:1.25rem;width:100%}
+.close-btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(255,255,255,.15);border-radius:.875rem;padding:.5rem 1rem;font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.7);transition:border-color .3s,color .3s}
+.close-btn:hover{border-color:rgba(255,255,255,.4);color:#fff}
+.close-btn .i{font-size:.875rem}
+.nv-mid{flex:1;display:flex;flex-direction:column;justify-content:center;width:100%;padding-block:1.5rem}
+.nv-mid button{display:flex;align-items:baseline;gap:1rem;width:100%;padding-block:.5rem;text-align:left;font-size:2.25rem;font-weight:600;letter-spacing:-.02em;opacity:0;transform:translateY(1rem);transition:opacity .5s ease-out,transform .5s ease-out}
+#nav.open .nv-mid button{opacity:1;transform:none;transition-delay:var(--d)}
+.nv-mid button i{font-style:normal;font-size:1rem;font-weight:400;color:rgba(255,255,255,.3);transition:color .3s}
+.nv-mid button span{color:rgba(255,255,255,.7);transition:color .3s}
+.nv-mid button:hover i{color:var(--accent-from)}
+.nv-mid button:hover span{color:#fff}
+.nv-bot{display:flex;flex-direction:column;gap:.75rem;border-top:1px solid rgba(255,255,255,.1);padding-block:1.5rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.025em;color:rgba(255,255,255,.45);width:100%}
+.nv-bot a,.nv-bot button{color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.025em}
+.nv-bot a:hover,.nv-bot button:hover{color:#fff;text-decoration:underline}
+.nv-bot div{display:flex;gap:1.5rem;flex-wrap:wrap}
+
+#quote{z-index:110;display:flex;align-items:flex-end;justify-content:center;padding:1rem;background:rgba(255,255,255,.45);backdrop-filter:blur(16px);overflow-y:auto}
+.panel{position:relative;width:100%;max-width:32rem;border-radius:2rem;background:#fff;padding:1.5rem;box-shadow:0 25px 50px -12px rgba(0,0,0,.35),0 0 0 1px var(--line);transform:translateY(28px);transition:transform .5s var(--ease)}
+#quote.open .panel{transform:none}
+.x-btn{position:absolute;right:1rem;top:1rem;width:2.25rem;height:2.25rem;display:grid;place-items:center;border-radius:50%;background:var(--surface);color:rgba(255,255,255,.6);transition:background .2s,color .2s;z-index:3}
+.x-btn:hover{background:var(--surface-2);color:#111}
+.panel h2{font-size:1.5rem;font-weight:600;letter-spacing:-.01em;margin:.375rem 0 1.5rem}
+.panel form{display:flex;flex-direction:column;gap:1rem}
+.two{display:grid;grid-template-columns:1fr;gap:1rem}
+.panel label span{display:block;font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.025em;color:rgba(255,255,255,.5);margin-bottom:.4rem}
+.panel input,.panel textarea{width:100%;border:1px solid var(--line);background:rgba(241,240,238,.5);border-radius:.875rem;padding:.75rem 1rem;font:inherit;font-size:.875rem;outline:none;resize:none;transition:border-color .2s,background .2s}
+.panel input:focus,.panel textarea:focus{border-color:rgba(255,255,255,.3);background:#fff}
+.form-foot{margin-top:.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.form-foot small{font-size:.75rem;color:rgba(255,255,255,.45)}
+.done{display:none;flex-direction:column;align-items:center;text-align:center;gap:1rem;padding-block:2rem}
+.done .logo-dot{width:4rem;height:4rem;box-shadow:0 0 0 1px var(--line)}
+.done p{max-width:34ch;font-size:.875rem;color:rgba(255,255,255,.6)}
+.panel.sent form,.panel.sent .hd{display:none}
+.panel.sent .done{display:flex}
+
+.g-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.25rem;width:100%}
+.g-top h3{font-size:1.125rem;font-weight:600}
+.g-top small{display:block;font-size:.75rem;color:rgba(255,255,255,.5);max-width:40rem}
+.g-stage{flex:1;position:relative;min-height:0;display:grid;place-items:center;padding:0 1rem}
+.g-stage img{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:1.25rem;object-fit:contain;position:absolute;inset:0;margin:auto;transition:opacity .45s ease}
+.g-stage img.hide{opacity:0}
+.g-arrow{position:absolute;top:50%;z-index:3;width:3rem;height:3rem;margin-top:-1.5rem;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);box-shadow:0 0 0 1px rgba(255,255,255,.2);font-size:1.1rem;transition:background .25s,transform .35s var(--spring)}
+.g-arrow:hover{background:var(--accent);transform:scale(1.08)}
+.g-arrow.prev{left:1rem}.g-arrow.prev .i{transform:rotate(180deg)}
+.g-arrow.next{right:1rem}
+.g-bot{display:flex;align-items:center;gap:1rem;padding-block:1.25rem;width:100%;font-size:.75rem;font-variant-numeric:tabular-nums;color:rgba(255,255,255,.7)}
+.g-bar{flex:1;height:1px;background:rgba(255,255,255,.15)}
+.g-bar i{display:block;height:100%;background:var(--accent-from);transition:width .4s var(--ease)}
+
+/* ≥640 */
+@media (min-width:640px){
+  .shell{padding-inline:2rem}
+  #header .shell{padding-block:1.5rem}
+  .menu-btn .lbl{display:inline}
+  .ld-brand{font-size:1.875rem}
+  .h2{font-size:3rem}
+  .watermark{font-size:7rem}
+  .hero-left h1{font-size:3.5rem}
+  .statusbar .mid{display:block}
+  .globe-bg{font-size:16rem}
+  .about-right h2{font-size:1.875rem}
+  .pillars{grid-template-columns:repeat(3,1fr)}
+  .band{flex-direction:row;gap:1rem}
+  .tile{height:10rem;font-size:2.25rem}
+  .tile.t-dark{font-size:3rem}
+  .mv-card{padding:2.5rem}
+  .quote{padding:4rem 3rem}
+  .quote blockquote{font-size:2.25rem}
+  .srv-row{gap:1.5rem;padding-block:2rem}
+  .srv-row .n{width:2.5rem}
+  .srv-row h3{font-size:1.875rem}
+  .srv-row .go{width:3rem;height:3rem}
+  .srv-more .inr{padding-left:5.5rem}
+  .op{min-height:28rem;padding:2rem}
+  .op-bot{inset-inline:2rem;bottom:2rem}
+  .stats{padding:4rem 2rem}
+  .stat b{font-size:3.75rem}
+  .promise{grid-template-columns:repeat(3,1fr)}
+  .contact-l h2{font-size:4.5rem}
+  .cgrid{grid-template-columns:repeat(2,1fr);column-gap:2.5rem}
+  .f-cta h2{font-size:3rem}
+  .f-legal{flex-direction:row;text-align:left}
+  .nv-top{padding-block:1.5rem}
+  .nv-mid button{font-size:3.75rem}
+  .nv-bot{flex-direction:row;justify-content:space-between}
+  #quote{align-items:center}
+  .panel{padding:2rem}
+  .panel h2{font-size:1.875rem}
+  .two{grid-template-columns:1fr 1fr}
+  .g-arrow.prev{left:2rem}.g-arrow.next{right:2rem}
+  .g-stage{padding:0 6rem}
+}
+/* ≥768 */
+@media (min-width:768px){
+  .clock{display:flex}
+  .mv-grid{grid-template-columns:1fr 1fr}
+  .mv-head{grid-template-columns:1fr 1fr;align-items:end}
+  .srv-row h3{font-size:2.25rem}
+  .ops-grid{grid-template-columns:repeat(3,1fr)}
+  .stats{padding-inline:4rem}
+  .stats h2{font-size:2.25rem}
+  .stat b{font-size:4.5rem}
+  .f-cta h2{font-size:3.75rem}
+  .f-cols{grid-template-columns:repeat(2,1fr)}
+}
+/* ≥1024 */
+@media (min-width:1024px){
+  .nav-main{display:block}
+  .watermark{font-size:11.5rem}
+  .hero-wm{bottom:6rem}
+  .hero-grid{display:grid;min-height:calc(100lvh - 3.5rem);grid-template-columns:repeat(12,1fr);align-items:end;gap:2.5rem;padding-top:9rem;padding-bottom:6rem}
+  .hero-left{grid-column:span 7}
+  .hero-left h1{font-size:5rem}
+  .hero-right{grid-column:span 5;align-items:flex-end}
+  .hcard,.offices{width:20rem}
+  .offices p{text-align:right}
+  .about{grid-template-columns:1fr 1fr;padding-block:7rem 4rem}
+  .globe-block{min-height:20rem}
+  .globe-bg{left:-1.5rem;font-size:20rem}
+  .pillars{padding-bottom:4rem}
+  .mv{padding-block:6rem}
+  .services{padding-block:7rem}
+  .srv-row p{display:block}
+  .srv-more .d{display:none}
+  .ops{padding-bottom:7rem}
+  .stats-wrap{padding-bottom:7rem}
+  .stats-grid{grid-template-columns:repeat(4,1fr)}
+  .contact{grid-template-columns:5fr 7fr;padding-bottom:7rem}
+  .contact-l{position:sticky;top:3rem;align-self:start}
+  footer .shell{padding-top:6rem}
+  .f-cta{flex-direction:row;align-items:flex-end;justify-content:space-between}
+  .f-cols{grid-template-columns:1.4fr 1fr 1fr 1fr}
+}
+
+/* ===== v22: dark premium theme ===== */
+:root{--background:#070707;--foreground:#f5f3ef;--surface:#131313;--surface-2:#1c1c1c;--line:rgba(255,255,255,.1);--muted:#807c76;
+  --glass:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.02));--edge:inset 0 0 0 1px rgba(255,255,255,.08),inset 0 1px 0 rgba(255,255,255,.14)}
+body{background:#070707}
+main{background:
+  radial-gradient(55rem 38rem at 90% 19%,rgba(245,155,43,.12),transparent 62%),
+  radial-gradient(48rem 36rem at 0% 38%,rgba(212,118,10,.10),transparent 62%),
+  radial-gradient(55rem 40rem at 95% 62%,rgba(245,155,43,.09),transparent 62%),
+  radial-gradient(45rem 34rem at 5% 86%,rgba(212,118,10,.09),transparent 62%)}
+#home{box-shadow:0 1px 0 rgba(255,255,255,.1)}
+.h2 em,.grad{font-style:normal;background:linear-gradient(100deg,var(--accent-from),#ffd08a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pill.dark{background:linear-gradient(to bottom right,var(--accent-from),var(--accent-to));color:#fff;box-shadow:0 .6rem 2rem rgba(245,155,43,.28)}
+.pill.outline{border-color:rgba(255,255,255,.2)}
+.pill.outline .badge{background:var(--accent);color:#fff}
+.pill.light{background:#fff;color:#111}
+.pill.accent{box-shadow:0 .6rem 2.2rem rgba(245,155,43,.35)}
+.hcard-nav button{color:#111}
+.chip{border-color:rgba(255,255,255,.16);color:rgba(255,255,255,.85);background:rgba(255,255,255,.03)}
+
+/* about visual */
+.about-vis{position:relative;border-radius:2rem;overflow:hidden;min-height:20rem;box-shadow:var(--edge);background:#111}
+.about-vis>img{position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover;will-change:transform}
+.about-vis::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(7,7,7,.45),transparent 35%,rgba(7,7,7,.9))}
+.av-top{position:absolute;z-index:2;left:1.5rem;top:1.5rem}
+.av-badge{position:absolute;z-index:2;left:1.5rem;right:1.5rem;bottom:1.5rem;display:flex;align-items:center;gap:1.25rem;padding:1.25rem 1.5rem;border-radius:1.25rem;background:rgba(10,10,10,.55);backdrop-filter:blur(14px);box-shadow:var(--edge)}
+.av-badge b{font-size:3rem;font-weight:700;line-height:1;letter-spacing:-.03em}
+.av-badge span{font-size:.875rem;color:rgba(255,255,255,.7);max-width:16rem}
+
+/* glass cards */
+.pillar,.mv-card{position:relative;overflow:hidden;background:var(--glass),#0e0e0e;box-shadow:var(--edge)}
+.pillar::after{content:"";position:absolute;right:-6rem;top:-6rem;width:16rem;height:16rem;border-radius:50%;background:radial-gradient(circle,rgba(245,155,43,.28),transparent 68%);opacity:0;transition:opacity .5s}
+.pillar .ic{background:rgba(245,155,43,.12);box-shadow:inset 0 0 0 1px rgba(245,155,43,.4),0 0 2rem rgba(245,155,43,.18)}
+.pillar .no{position:absolute;right:1.5rem;top:1rem;font-size:3.5rem;font-weight:700;letter-spacing:-.04em;color:rgba(255,255,255,.05)}
+.pillar p{color:rgba(255,255,255,.6)}
+@media (hover:hover){.pillar:hover{background:var(--glass),#0e0e0e}.pillar:hover::after{opacity:1}}
+.tile.t-light{background:#131313;box-shadow:var(--edge)}
+.tile.t-accent{box-shadow:0 1rem 3.5rem rgba(245,155,43,.3)}
+.tile.t-dark{background:transparent;box-shadow:inset 0 0 0 1px rgba(245,155,43,.55);color:var(--accent-from)}
+.tile.t-ghost{background:rgba(255,255,255,.03);color:rgba(255,255,255,.28)}
+.mv-card .tag{color:var(--accent-from)}
+.mv-card.dark{background:linear-gradient(160deg,rgba(245,155,43,.2),rgba(245,155,43,.02) 58%),#0e0e0e;box-shadow:inset 0 0 0 1px rgba(245,155,43,.32),0 2rem 5rem rgba(245,155,43,.08)}
+.mv-card li b{color:var(--accent-from);opacity:.9}
+.quote{background:radial-gradient(42rem 18rem at 50% 125%,rgba(245,155,43,.42),transparent 70%),#0c0c0c;box-shadow:var(--edge)}
+.quote::before{color:rgba(245,155,43,.16)}
+.quote blockquote{background:linear-gradient(100deg,#fff 25%,#ffd08a 65%,var(--accent-from));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* services: sticky visual + rows */
+.srv-wrap{display:grid;grid-template-columns:1fr;gap:2rem}
+.srv-vis{position:relative;border-radius:2rem;overflow:hidden;aspect-ratio:16/10;background:#111;box-shadow:var(--edge),0 2rem 6rem rgba(245,155,43,.1)}
+.srv-vis img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity .7s var(--ease),transform 1.6s var(--ease)}
+.srv-vis img.on{opacity:1;transform:none}
+.srv-vis::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(7,7,7,.25),transparent 40%,rgba(7,7,7,.92))}
+.srv-cap{position:absolute;z-index:2;left:1.75rem;right:1.75rem;bottom:1.5rem}
+.srv-cap small{display:block;font-size:.75rem;letter-spacing:.08em;color:var(--accent-from);font-weight:600;font-variant-numeric:tabular-nums}
+.srv-cap b{display:block;font-size:1.75rem;font-weight:600;letter-spacing:-.02em;line-height:1.1;margin-top:.35rem}
+.srv-row{background:transparent}
+.srv-row .go{background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)}
+.srv.open .srv-row{background:rgba(255,255,255,.05)}
+.srv.open .srv-row .n{color:var(--accent-from)}
+.srv.open .go{background:var(--accent);box-shadow:0 0 2rem rgba(245,155,43,.45)}
+@media (hover:hover){.srv-row:hover{background:rgba(255,255,255,.05)}}
+
+.op{box-shadow:var(--edge)}
+.stats{background:radial-gradient(42rem 24rem at 100% 0,rgba(245,155,43,.22),transparent 65%),radial-gradient(30rem 20rem at 0 100%,rgba(245,155,43,.1),transparent 65%),#0d0d0d;box-shadow:var(--edge)}
+.stat b{background:linear-gradient(180deg,#fff 30%,#b9b2a6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat b i{-webkit-text-fill-color:var(--accent-from)}
+.cgrid small{color:var(--accent-from)}
+.cgrid a:hover{color:var(--accent-from)}
+footer{background:#0b0b0b;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+
+#quote{background:rgba(0,0,0,.65)}
+.panel{background:#111;color:var(--foreground);box-shadow:0 25px 60px rgba(0,0,0,.6),var(--edge)}
+.panel input,.panel textarea{background:rgba(255,255,255,.05);color:#fff}
+.panel input::placeholder,.panel textarea::placeholder{color:rgba(255,255,255,.3)}
+.panel input:focus,.panel textarea:focus{border-color:rgba(245,155,43,.65);background:rgba(255,255,255,.08)}
+.x-btn:hover{color:#fff}
+
+@media (min-width:640px){.about-vis{min-height:26rem}.av-badge b{font-size:3.75rem}}
+@media (min-width:1024px){
+  .about{align-items:stretch}
+  .about-vis{min-height:32rem}
+  .about-right{justify-content:center}
+  .srv-wrap{grid-template-columns:5fr 7fr;gap:3.5rem;align-items:start}
+  .srv-vis{position:sticky;top:2rem;aspect-ratio:4/5}
+  .srv-cap b{font-size:2.25rem}
+  .srv-row h3{font-size:1.875rem}
+  .srv-row p{display:none}
+  .srv-more .d{display:block}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+</style>
+<noscript><style>#loader{display:none}</style></noscript>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25"/><path d="M12 2.75c2.6 2.3 4 5.8 4 9.25s-1.4 6.95-4 9.25c-2.6-2.3-4-5.8-4-9.25s1.400-6.950 4-9.250zM2.750 12h18.500"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.400 7-11a7 7 0 1 0-14 0c0 5.600 7 11 7 11Z"/><circle cx="12" cy="10" r="2.500"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m8.500 12 2.300 2.300 4.700-5"/></symbol>
+  <symbol id="i-support" viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M5 13h3v6H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2Z"/><path d="M19 13h-3v6h3a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2Z"/><path d="M16 19c0 1.100-1.800 2-4 2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><rect x="1" y="6" width="14" height="10" rx="1"/><path d="M15 10h4l3 3v3h-7v-6z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M21 15.500 13.500 11V5.500a1.500 1.500 0 0 0-3 0V11L3 15.500V17l7.500-2v4L8.500 20.500V22l3.500-1 3.500 1v-1.500L13.500 19v-4L21 17z"/></symbol>
+  <symbol id="i-ship" viewBox="0 0 24 24"><path d="M3 15l1.500 4.500h15L21 15l-9-3-9 3z"/><path d="M6 13.900V8h12v5.900M12 4v4M10 4h4"/><path d="M2 22c1.500 0 1.500-1 3-1s1.500 1 3 1 1.500-1 3-1 1.500 1 3 1 1.500-1 3-1 1.500 1 3 1"/></symbol>
+  <symbol id="i-build" viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l6-4v4l6-4v14"/><rect x="10" y="14" width="4" height="6"/><path d="M16 6h4v14"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-center">
+    <div class="ld-brand"><img class="logo-dot" src="logo.jpg" alt="" style="width:2.75rem;height:2.75rem"><span>CARGO<b>CARE</b></span></div>
+    <p>We don’t just move cargo, we deliver trust.</p>
+  </div>
+  <div class="ld-prog">
+    <div class="ld-track"><div class="ld-fill" id="ldFill"></div></div>
+    <div class="ld-row"><span>Loading</span><b id="ldNum">000</b></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header" data-r style="--y:-14px;--d:150ms">
+  <div class="shell">
+    <button class="brand" data-go="home" aria-label="Cargo Care Logistics — home">
+      <img class="logo-dot" src="logo.jpg" alt="" style="width:2.5rem;height:2.5rem">
+      <span>CARGO<b>CARE</b><small>Logistics Sdn Bhd</small></span>
+    </button>
+    <nav class="nav-main" aria-label="Primary">
+      <ul>
+        <li><button data-go="home" aria-current="page"><span>Home</span></button></li>
+        <li><button data-go="about"><span>About Us</span></button></li>
+        <li><button data-go="services"><span>Services</span></button></li>
+        <li><button data-go="gallery"><span>Gallery</span></button></li>
+        <li><button data-go="contact"><span>Contact</span></button></li>
+      </ul>
+    </nav>
+    <div class="hd-right">
+      <div class="clock glass"><em>Malaysia time</em><b class="t" data-time>9:41am</b><i>•</i><b data-date>12 March, 2025</b></div>
+      <button class="menu-btn glass" id="menuBtn" aria-haspopup="dialog" aria-label="Open menu"><span><svg class="i"><use href="#i-menu"/></svg><span class="lbl">Menu</span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section id="home">
+  <div class="liquid" id="liquid" data-reel="hero-1 hero-2 hero-3" data-clouds="heroClouds">
+    <div class="reel" role="img" aria-label="Container port, cargo ships and logistics operations"></div>
+  </div>
+  <div class="vignette"></div>
+  <div class="clouds" id="heroClouds" aria-hidden="true"></div>
+  <div class="watermark hero-wm" data-r style="--y:20px;--d:300ms">CARGO CARE</div>
+
+  <div class="shell hero-grid">
+    <div class="hero-left">
+      <span class="eyebrow light" data-r style="--y:10px;--d:200ms">Established 2006 · Logistics &amp; Forwarding</span>
+      <h1 class="lines">
+        <span class="ln" style="--d:250ms"><span>We don’t just</span></span>
+        <span class="ln" style="--d:370ms"><span>move cargo,</span></span>
+        <span class="ln" style="--d:490ms"><span>we deliver <em>trust.</em></span></span>
+      </h1>
+      <p class="hero-desc" data-r style="--y:12px;--d:600ms">Built on the belief that Service and Quality are the foundations of our success, we deliver reliable, efficient and innovative logistics solutions to businesses worldwide.</p>
+      <div class="modes" data-r style="--y:10px;--d:650ms">
+        <span><svg class="i"><use href="#i-truck"/></svg>Land</span><i>/</i>
+        <span><svg class="i"><use href="#i-plane"/></svg>Air</span><i>/</i>
+        <span><svg class="i"><use href="#i-ship"/></svg>Sea</span><i>—</i>
+        <span>20+ years in the industry</span>
+      </div>
+      <div class="cta-row" data-r style="--y:10px;--d:750ms">
+        <button class="pill accent arrow" data-quote>Get Quote<span class="badge"><svg class="i"><use href="#i-ur"/></svg></span></button>
+        <button class="pill glass" data-go="services">Our Services</button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hcard" data-r style="--y:16px;--s:.96;--d:400ms">
+        <div class="hcard-row" id="hcard" role="group" aria-label="Freight services">
+          <div class="hcard-tile"><img src="logo.jpg" alt="Cargo Care logo"></div>
+          <div class="hcard-panel">
+            <div class="hcard-slot" id="hcardSlot" aria-live="polite"></div>
+            <div class="hcard-foot">
+              <div class="dots" id="hcardDots"></div>
+              <div class="hcard-nav">
+                <button id="hcPrev" aria-label="Previous"><svg class="i" style="transform:rotate(180deg)"><use href="#i-right"/></svg></button>
+                <button id="hcNext" aria-label="Next"><svg class="i"><use href="#i-right"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offices" data-r style="--y:14px;--d:550ms">
+        <p>Our offices</p>
+        <ul>
+          <li><button data-go="contact"><svg class="i"><use href="#i-pin"/></svg>Sepang HQ</button></li>
+          <li><button data-go="contact"><svg class="i"><use href="#i-pin"/></svg>Port Klang</button></li>
+          <li><button data-go="contact"><svg class="i"><use href="#i-pin"/></svg>KLIA Cargo Village</button></li>
+          <li><button data-go="contact"><svg class="i"><use href="#i-pin"/></svg>Kemaman Supply Base</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="shell"><div class="statusbar" data-r style="--y:0px;--d:900ms">
+    <span>Established 2006</span>
+    <span class="mid">ROC 726342-A · Agent Code WF 0651</span>
+    <span class="scroll">Scroll to explore <i>↓</i></span>
+  </div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="shell about">
+    <div data-r style="--y:40px;--s:.98"><div class="about-vis" id="aboutVis">
+      <img src="picture/hero/hero-port.png" alt="Container yard with a reach stacker lifting a container" loading="lazy">
+      <span class="eyebrow light av-top">Who we are</span>
+      <div class="av-badge"><b class="grad">20+</b><span>Years as a major &amp; reliable player serving clients across all continents.</span></div>
+    </div></div>
+    <div class="about-right">
+      <h2 class="words">Cargo Care Logistics Sdn Bhd has been in the Logistics &amp; Forwarding industry for 20+ years. <span class="m">We handle Cargo Shipment (Land / Air / Sea), Courier, Packaging, Moving and Loyalty Courier — including car importation from Japan, UK.</span></h2>
+      <div class="about-foot" data-r style="--y:12px;--d:200ms">
+        <div><small>Company registration</small><b>ROC 726342-A · Agent Code WF 0651</b></div>
+        <button class="pill outline arrow" data-go="mission">Our direction<span class="badge"><svg class="i right"><use href="#i-right"/></svg></span></button>
+      </div>
+    </div>
+  </div>
+  <ul class="shell pillars">
+    <li data-r style="--d:0ms"><div class="pillar"><span class="no">01</span><div class="ic"><svg class="i"><use href="#i-globe"/></svg></div><h3>Global Reach</h3><p>Serving clients across all continents — a major &amp; reliable player in the global logistics sector.</p></div></li>
+    <li data-r style="--d:100ms"><div class="pillar"><span class="no">02</span><div class="ic"><svg class="i"><use href="#i-build"/></svg></div><h3>LPO Specialist</h3><p>Focused on Logistics Process Outsourcing to support Malaysia's Logistics, Distribution &amp; Warehousing sectors.</p></div></li>
+    <li data-r style="--d:200ms"><div class="pillar"><span class="no">03</span><div class="ic"><svg class="i"><use href="#i-users"/></svg></div><h3>Target Clients</h3><p>B2B &amp; B2C companies in FMCG, Hospitality, Supplier, Import/Export and E-Commerce industries.</p></div></li>
+  </ul>
+</section>
+
+<!-- BAND -->
+<section aria-label="We deliver trust">
+  <ul class="shell band">
+    <li data-r style="--y:28px;--d:0ms"><div class="tile t-light">We</div></li>
+    <li data-r style="--y:28px;--d:120ms"><div class="tile t-accent">Deliver</div></li>
+    <li data-r style="--y:28px;--d:240ms"><div class="tile t-dark"><svg class="i"><use href="#i-right"/></svg></div></li>
+    <li data-r style="--y:28px;--d:360ms"><div class="tile t-ghost">Trust</div></li>
+  </ul>
+</section>
+
+<!-- MISSION & VISION -->
+<section id="mission">
+  <div class="shell mv">
+    <div class="mv-head">
+      <div>
+        <span class="eyebrow" data-r style="--y:10px">Mission &amp; Vision</span>
+        <h2 class="h2 lines" style="margin-top:1.25rem"><span class="ln" style="--d:120ms"><span>Our direction</span></span></h2>
+      </div>
+      <p data-r style="--y:12px;--d:200ms">Guided by purpose, driven by commitment — shaping the future of logistics in Malaysia and beyond.</p>
+    </div>
+    <div class="mv-grid">
+      <div data-r style="--y:40px"><div class="mv-card">
+        <span class="tag">Mission</span><h3>What we do</h3>
+        <ul>
+          <li><b>01</b>Always seek efficient solutions and effective logistics systems</li>
+          <li><b>02</b>Develop and grow the logistics sector in Malaysia</li>
+          <li><b>03</b>To create the best cooperation with customers as a trusted and reliable partner</li>
+        </ul>
+      </div></div>
+      <div data-r style="--y:40px;--d:120ms"><div class="mv-card dark">
+        <span class="tag">Vision</span><h3>Where we’re going</h3>
+        <ul>
+          <li><b>01</b>To support Malaysia businesses' success in the sector of Logistics &amp; Distribution Services</li>
+          <li><b>02</b>To be the major and reliable player serving clients across all continents</li>
+          <li><b>03</b>Guided by vision and mission to keep company performance focused towards target achievements</li>
+        </ul>
+      </div></div>
+    </div>
+    <div data-r style="--y:40px;--s:.99"><div class="quote">
+      <blockquote>“Management is doing things right;<br>Leadership is doing the right things.”</blockquote>
+      <cite>— Cargo Care Logistics Philosophy</cite>
+    </div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="shell services">
+    <span class="eyebrow" data-r style="--y:10px">Our Services</span>
+    <h2 class="h2 lines"><span class="ln" style="--d:120ms"><span>What we deliver</span></span></h2>
+    <p class="intro" data-r style="--y:12px;--d:200ms">Comprehensive logistics solutions tailored to your needs — from door-to-door delivery to international freight forwarding across land, air and sea.</p>
+    <div class="srv-wrap">
+      <div data-r style="--y:40px"><div class="srv-vis" id="srvVis" data-reel="deliver-1 deliver-2" data-clouds="srvClouds"><div class="reel" role="img" aria-label="Container cranes loading a cargo ship"></div><div class="clouds" id="srvClouds" aria-hidden="true"></div><div class="srv-cap"><small id="srvNo">01 / 06</small><b id="srvName">Door to Door</b></div></div></div>
+      <ul id="srvList"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- OPERATIONS / GALLERY -->
+<section id="gallery">
+  <div class="shell ops">
+    <div class="ops-head">
+      <span class="eyebrow boxed" data-r style="--y:10px">Logistics Operations</span>
+      <h2 class="h2 lines"><span class="ln" style="--d:120ms"><span>Real Projects. <em>Real Deliveries.</em></span></span><span class="ln" style="--d:220ms"><span>Real Experience.</span></span></h2>
+    </div>
+    <ul class="ops-grid" id="opsGrid"></ul>
+  </div>
+</section>
+
+<!-- STATS -->
+<section aria-label="Cargo Care by the numbers">
+  <div class="shell stats-wrap">
+    <div data-r style="--y:40px;--s:.99"><div class="stats">
+      <span class="eyebrow light">By the numbers</span>
+      <h2 class="lines"><span class="ln" style="--d:120ms"><span>Two decades of moving what matters.</span></span></h2>
+      <ul class="stats-grid" id="statsGrid">
+        <li class="stat" data-r style="--y:20px;--d:0ms"><b><span data-count="20">0</span><i>+</i></b><span>Years in logistics &amp; forwarding</span></li>
+        <li class="stat" data-r style="--y:20px;--d:90ms"><b><span data-count="4">0</span></b><span>Offices across Malaysia</span></li>
+        <li class="stat" data-r style="--y:20px;--d:180ms"><b><span data-count="6">0</span></b><span>Core logistics services</span></li>
+        <li class="stat" data-r style="--y:20px;--d:270ms"><b><span data-count="3">0</span></b><span>Modes — land, air &amp; sea</span></li>
+      </ul>
+      <ul class="promise">
+        <li data-r style="--y:16px;--d:0ms"><div><span class="ic"><svg class="i"><use href="#i-pin"/></svg></span><div><h4>Real-Time Tracking</h4><p>Track your shipments in real-time.</p></div></div></li>
+        <li data-r style="--y:16px;--d:90ms"><div><span class="ic"><svg class="i"><use href="#i-shield"/></svg></span><div><h4>Secure &amp; Safe</h4><p>Your cargo safety is our top priority.</p></div></div></li>
+        <li data-r style="--y:16px;--d:180ms"><div><span class="ic"><svg class="i"><use href="#i-support"/></svg></span><div><h4>24/7 Support</h4><p>Our team is ready to assist you, 24/7.</p></div></div></li>
+      </ul>
+    </div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-bg" aria-hidden="true"><video data-bg src="picture/video/contact.mp4" poster="picture/video/contact.jpg" muted loop playsinline preload="metadata"></video></div>
+  <div class="shell contact">
+    <div class="contact-l">
+      <span class="eyebrow" data-r style="--y:10px">Contact</span>
+      <h2 class="lines"><span class="ln" style="--d:120ms"><span>Get in touch</span></span></h2>
+      <p data-r style="--y:12px;--d:200ms">For any enquiries, or just to say hello, get in touch with Cargo Care Logistics.</p>
+      <div data-r style="--y:12px;--d:280ms"><button class="pill dark arrow" data-quote>Get Quote<span class="badge"><svg class="i"><use href="#i-ur"/></svg></span></button></div>
+    </div>
+    <ul class="cgrid">
+      <li data-r style="--d:0ms"><div><small>General Inquiries</small><div class="v"><a href="mailto:inquiry@cargocare.com.my">inquiry@cargocare.com.my</a><br><a href="tel:+60387066332">+603-8706 6332</a><br><a href="tel:+60387067331">+603-8706 7331</a><br><a href="tel:+60183996982">+60 18-399 6982</a></div></div></li>
+      <li data-r style="--d:80ms"><div><small>Headquarters</small><address>No. 47, Jalan Gemilang 1<br>Pusat Perniagaan Gemilang<br>43900 Sepang, Selangor</address></div></li>
+      <li data-r style="--d:0ms"><div><small>Port Klang Office</small><address>No. 21-1, Lorong Permai 1H/KS 05<br>Taman Pandamaran Permai<br>42000 Port Klang, Selangor</address></div></li>
+      <li data-r style="--d:80ms"><div><small>KLIA Cargo Office</small><address>Lot F1-37, Forwarders Building<br>Klas Cargo Complex, KLIA Cargo Village<br>64000 Sepang, Selangor</address></div></li>
+      <li data-r style="--d:0ms"><div><small>Kemaman Supply Base</small><address>No. 29, 1st Floor, Office Administration A<br>Kemaman Supply Base, Teluk Kalong<br>24007 Kemaman, Terengganu</address></div></li>
+      <li data-r style="--d:80ms"><div><small>Staff Email</small><div class="v"><a href="https://webmail.cargocare.com.my/" target="_blank" rel="noopener noreferrer">webmail.cargocare.com.my ↗</a></div></div></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="shell">
+    <div class="f-cta">
+      <h2 class="lines"><span class="ln"><span>Have a shipment in mind?</span></span><span class="ln" style="--d:100ms"><span>Let’s get it moving.</span></span></h2>
+      <button class="pill light arrow" data-quote>Get Quote<span class="badge"><svg class="i"><use href="#i-ur"/></svg></span></button>
+    </div>
+    <div class="f-cols">
+      <div>
+        <div class="f-brand"><img class="logo-dot" src="logo.jpg" alt="" style="width:2.25rem;height:2.25rem"><span>CARGO<b>CARE</b> LOGISTICS SDN BHD</span></div>
+        <p>Reliable, efficient and innovative logistics solutions — land, air and sea — for businesses worldwide since 2006.</p>
+        <p style="font-size:.75rem">ROC: 726342-A · Agent Code: WF 0651</p>
+      </div>
+      <div><h5>Company</h5><ul>
+        <li><a class="alink" href="#about" data-go="about"><span>About Us</span></a></li>
+        <li><a class="alink" href="#mission" data-go="mission"><span>Mission &amp; Vision</span></a></li>
+        <li><a class="alink" href="#gallery" data-go="gallery"><span>Gallery</span></a></li>
+        <li><a class="alink" href="#contact" data-go="contact"><span>Contact</span></a></li>
+      </ul></div>
+      <div><h5>Services</h5><ul>
+        <li><a class="alink" href="#services" data-go="services"><span>Door to Door</span></a></li>
+        <li><a class="alink" href="#services" data-go="services"><span>Air Freight</span></a></li>
+        <li><a class="alink" href="#services" data-go="services"><span>Sea Freight</span></a></li>
+        <li><a class="alink" href="#services" data-go="services"><span>Road Freight</span></a></li>
+        <li><a class="alink" href="#services" data-go="services"><span>Car &amp; Motorcycle Shipment</span></a></li>
+        <li><a class="alink" href="#services" data-go="services"><span>Import &amp; Export / Oil &amp; Gas</span></a></li>
+      </ul></div>
+      <div><h5>Contact</h5><ul>
+        <li><a class="alink" href="mailto:inquiry@cargocare.com.my"><span>inquiry@cargocare.com.my</span></a></li>
+        <li><a class="alink" href="tel:+60387066332"><span>+603-8706 6332</span></a></li>
+        <li><a class="alink" href="tel:+60387067331"><span>+603-8706 7331</span></a></li>
+        <li><a class="alink" href="tel:+60183996982"><span>+60 18-399 6982</span></a></li>
+        <li><a class="alink" href="https://webmail.cargocare.com.my/" target="_blank" rel="noopener noreferrer"><span>Staff Email ↗</span></a></li>
+      </ul></div>
+    </div>
+    <div class="f-legal">
+      <span>© <span id="yr">2026</span> Cargo Care Logistics Sdn Bhd. All rights reserved.</span>
+      <a class="alink" href="#home" data-go="home"><span>Back to top ↑</span></a>
+    </div>
+  </div>
+  <div class="watermark foot-wm" aria-hidden="true">CARGO CARE</div>
+</footer>
+
+<!-- NAV OVERLAY -->
+<div class="ov" id="nav" role="dialog" aria-modal="true" aria-label="Menu" data-lenis-prevent>
+  <div class="shell nv-top">
+    <div class="f-brand"><img class="logo-dot" src="logo.jpg" alt="" style="width:2.5rem;height:2.5rem"><span>CARGO<b>CARE</b></span></div>
+    <button class="close-btn" data-close><svg class="i"><use href="#i-x"/></svg>Close</button>
+  </div>
+  <nav class="shell nv-mid" aria-label="Menu">
+    <ul>
+      <li><button data-go="home" style="--d:80ms"><i>01</i><span>Home</span></button></li>
+      <li><button data-go="about" style="--d:125ms"><i>02</i><span>About Us</span></button></li>
+      <li><button data-go="mission" style="--d:170ms"><i>03</i><span>Mission &amp; Vision</span></button></li>
+      <li><button data-go="services" style="--d:215ms"><i>04</i><span>Services</span></button></li>
+      <li><button data-go="gallery" style="--d:260ms"><i>05</i><span>Gallery</span></button></li>
+      <li><button data-go="contact" style="--d:305ms"><i>06</i><span>Contact</span></button></li>
+    </ul>
+  </nav>
+  <div class="shell nv-bot">
+    <span>Malaysia time — <span data-time>9:41am</span></span>
+    <div><a href="https://webmail.cargocare.com.my/" target="_blank" rel="noopener noreferrer">Staff Email ↗</a><button data-quote>Get Quote →</button></div>
+  </div>
+</div>
+
+<!-- QUOTE MODAL -->
+<div class="ov" id="quote" role="dialog" aria-modal="true" aria-labelledby="quoteTitle" data-lenis-prevent>
+  <div class="panel" id="quotePanel">
+    <button class="x-btn" data-close aria-label="Close"><svg class="i"><use href="#i-x"/></svg></button>
+    <div class="hd">
+      <span class="eyebrow">Get a quote</span>
+      <h2 id="quoteTitle">Tell us what you’re shipping.</h2>
+    </div>
+    <form id="quoteForm">
+      <div class="two">
+        <label><span>Name</span><input name="name" type="text" required placeholder="Your name" autocomplete="name"></label>
+        <label><span>Phone</span><input name="phone" type="tel" placeholder="+60 …" autocomplete="tel"></label>
+      </div>
+      <label><span>Email</span><input name="email" type="email" required placeholder="you@company.com" autocomplete="email"></label>
+      <label><span>Shipment details</span><textarea name="details" rows="4" required placeholder="What are you shipping, from where to where, and when?"></textarea></label>
+      <div class="form-foot">
+        <small>Opens your email app, addressed to inquiry@cargocare.com.my</small>
+        <button class="pill dark arrow" type="submit"><span id="sendLbl">Send request</span><span class="badge"><svg class="i"><use href="#i-ur"/></svg></span></button>
+      </div>
+    </form>
+    <div class="done">
+      <img class="logo-dot" src="logo.jpg" alt="">
+      <h2 style="margin:0">Almost there</h2>
+      <p>Your email app should now be open with your request ready — just press send. If nothing opened, email us at <a href="mailto:inquiry@cargocare.com.my" style="color:var(--accent);font-weight:500">inquiry@cargocare.com.my</a> or call +603-8706 6332.</p>
+      <button class="pill dark" data-close>Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY LIGHTBOX -->
+<div class="ov" id="gallery-lb" role="dialog" aria-modal="true" aria-label="Photo gallery" data-lenis-prevent style="z-index:112;background:rgba(10,10,10,.96);color:#fff;display:flex;flex-direction:column">
+  <div class="shell g-top">
+    <div><h3 id="gTitle"></h3><small id="gDesc"></small></div>
+    <button class="close-btn" data-close><svg class="i"><use href="#i-x"/></svg>Close</button>
+  </div>
+  <div class="g-stage">
+    <button class="g-arrow prev" id="gPrev" aria-label="Previous photo"><svg class="i"><use href="#i-right"/></svg></button>
+    <img id="gImgA" alt=""><img id="gImgB" class="hide" alt="">
+    <button class="g-arrow next" id="gNext" aria-label="Next photo"><svg class="i"><use href="#i-right"/></svg></button>
+  </div>
+  <div class="shell g-bot"><span id="gCount">01 / 01</span><div class="g-bar"><i id="gBar" style="width:0"></i></div><span>← → to browse</span></div>
+</div>
+
+<script type="importmap">
+{ "imports": { "lenis": "https://unpkg.com/lenis@1.3.23/dist/lenis.mjs" } }
+</script>
+<script type="module">
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+
+/* ---------- adaptive grid: scale up above 1920px ---------- */
+function applyAdaptiveGrid() {
+  const FONT_BASE = 16, baseWidth = 1920, coef = 0.6666;
+  const widthReduction = ((baseWidth - innerWidth) / baseWidth) * 100;
+  const size = FONT_BASE - (FONT_BASE * (widthReduction * coef)) / 100;
+  if (size > FONT_BASE) document.documentElement.style.fontSize = size + 'px';
+  else document.documentElement.style.removeProperty('font-size');
+}
+applyAdaptiveGrid(); addEventListener('resize', applyAdaptiveGrid);
+
+/* ---------- smooth scroll (Lenis, falls back to native if the CDN is unreachable) ---------- */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+let lenis = null, locks = 0;
+import('lenis').then(m => {
+  lenis = new m.default({ smoothWheel: true });
+  if (locks > 0) lenis.stop();
+  const raf = t => { lenis.raf(t); requestAnimationFrame(raf); };
+  requestAnimationFrame(raf);
+}).catch(() => {});
+
+function stopScroll() {
+  if (++locks > 1) return;
+  lenis?.stop();
+  Object.assign(document.documentElement.style, { position: 'relative', overflow: 'hidden', height: '100%' });
+}
+function startScroll() {
+  if (locks === 0 || --locks > 0) return;
+  lenis?.start();
+  ['position', 'overflow', 'height'].forEach(p => document.documentElement.style.removeProperty(p));
+}
+function scrollToId(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  setTimeout(() => {
+    if (lenis) lenis.scrollTo(el, { duration: 1.4 });
+    else window.scrollTo({ top: el.getBoundingClientRect().top + pageYOffset, behavior: reduced ? 'auto' : 'smooth' });
+  }, 50);
+}
+
+/* ---------- data ---------- */
+const SERVICES = [
+  ['Door to Door', 'We secure the process by picking up goods from cargo until clients successfully receive them.',
+    ['Packaging & Documentation', 'Palletizing & Protective Covering', 'Labelling', 'Document Collection & Delivery'], 'picture/cargo/Cargo Transportation.jpeg'],
+  ['Air Freight', 'Global airfreight network with gateways in key markets, enabling quality services on a global scale.',
+    ['Healthcare & Automotive', 'Express & Same Day', 'Perishables & Fashion', 'On-site Customer Service'], 'picture/hero/hero-night.jpg'],
+  ['Sea Freight', 'Full-container-loads (FCL), less-than-container-loads (LCL) and complete project shipments worldwide.',
+    ['FCL & LCL Shipments', 'Customs Clearance', 'Shipment Documentation', 'Project Cargo'], 'picture/hero/hero-port.png'],
+  ['Road Freight', 'Our fleet of trucks ensures your transports reach their destination quickly and cost-effectively.',
+    ['Dedicated Fleet', 'Experienced Customs Agents', 'Malaysia-wide Coverage'], 'picture/cargo/WhatsApp Image 2026-07-05 at 9.06.30 PM (3).jpeg'],
+  ['Car & Motorcycle Shipment', 'Specialist in handling imported cars & motorcycles (New/Used) from UK, Japan, US.',
+    ['Air & Sea Freight Options', 'Puspakom Inspection', 'PEKEMA Authentication', 'Japan, UK, US Imports'], 'picture/kenderaan/Vehicle Transportation.jpeg'],
+  ['Import & Export / Oil & Gas', 'Specialised transport and logistics for industrial sectors including Oil & Gas.',
+    ['Oil & Gas Equipment Transportation', 'Heavy Machinery & Industrial Logistics', 'Instrumentation & Control Equipment',
+     'Mechanical & Electrical Equipment Delivery', 'Installation & Commissioning Support', 'Testing & System Commissioning Logistics',
+     'Project Cargo Management', 'Offshore & Onshore Logistics Support'], 'picture/cargo/WhatsApp Image 2026-07-05 at 9.36.51 PM (46).jpeg'],
+];
+const wa = (t, ns) => ns.map(n => `WhatsApp Image 2026-07-05 at ${t} PM${n ? ` (${n})` : ''}.jpeg`);
+const GALLERY = {
+  cargo: {
+    tag: 'Cargo', title: 'Cargo Transportation', folder: 'picture/cargo/',
+    desc: 'Transporting general cargo, industrial equipment, project materials, and commercial goods with efficiency and reliability.',
+    files: ['Cargo Transportation.jpeg', ...wa('9.06.30', [3, 6, 7]), ...wa('9.06.31', [4]),
+      ...wa('9.36.51', [12, 13, 17, 19, 24, 26, 29, 31, 32, 33, 35, 38, 4, 46, 47, 48, 49, 5, 50, 51, 52, 6, 7, 8])],
+  },
+  haiwan: {
+    tag: 'Livestock', title: 'Livestock Transportation', folder: 'picture/haiwan/',
+    desc: 'Professional and safe transportation of livestock and live animals with strict handling and welfare standards.',
+    files: ['Livestock Transportation.jpg', ...wa('9.36.50', [2, 3, 5, 6, 7, 0]), ...wa('9.36.51', [1, 2])],
+  },
+  kenderaan: {
+    tag: 'Vehicles', title: 'Vehicle Transportation', folder: 'picture/kenderaan/',
+    desc: 'Secure transportation of passenger vehicles, commercial vehicles, heavy machinery, and special-purpose vehicles.',
+    files: ['Vehicle Transportation.jpeg', ...wa('9.02.44', [0]), ...wa('9.02.46', [2, 0]), ...wa('9.02.49', [1]), ...wa('9.03.43', [1]),
+      ...wa('9.03.48', [0]), ...wa('9.03.51', [1, 4, 6, 0]), ...wa('9.06.30', [3, 6, 7]), ...wa('9.06.31', [4]),
+      ...wa('9.36.51', [57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67])],
+  },
+};
+const esc = s => s.replace(/&/g, '&amp;');
+const icon = (id, cls = '') => `<svg class="i ${cls}"><use href="#i-${id}"/></svg>`;
+
+/* ---------- render services (accordion rows) ---------- */
+$('#srvList').innerHTML = SERVICES.map(([t, d, list], i) => `
+  <li class="srv" data-r style="--d:${i * 80}ms">
+    <button class="srv-row" aria-expanded="false">
+      <span class="n">0${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p>
+      <span class="go">${icon('ur')}</span>
+    </button>
+    <div class="srv-more"><div><div class="inr">
+      <p class="d">${esc(d)}</p>
+      <ul>${list.map(x => `<li class="chip">${esc(x)}</li>`).join('')}</ul>
+    </div></div></div>
+  </li>`).join('');
+const srvVis = $('#srvVis');
+function setVis(i) {
+  $('#srvNo').textContent = `0${i + 1} / 0${SERVICES.length}`; $('#srvName').textContent = SERVICES[i][0];
+}
+$$('.srv').forEach((li, i) => { li.addEventListener('mouseenter', () => setVis(i)); $('.srv-row', li).addEventListener('focus', () => setVis(i)); });
+$$('.srv').forEach((li, i) => $('.srv-row', li).addEventListener('click', () => {
+  setVis(i);
+  const open = !li.classList.contains('open');
+  $$('.srv.open').forEach(o => { o.classList.remove('open'); $('.srv-row', o).setAttribute('aria-expanded', 'false'); });
+  li.classList.toggle('open', open);
+  $('.srv-row', li).setAttribute('aria-expanded', String(open));
+}));
+
+/* ---------- render operations cards ---------- */
+$('#opsGrid').innerHTML = Object.entries(GALLERY).map(([key, g], i) => `
+  <li data-r style="--y:48px;--d:${i * 90}ms">
+    <button class="op" data-gallery="${key}" aria-label="${g.title} — view gallery">
+      <img src="${encodeURI(g.folder + g.files[0])}" alt="" loading="lazy">
+      <div class="op-top"><span>${g.tag} — ${g.files.length} photos</span><span class="op-badge">${icon('ur')}</span></div>
+      <div class="op-bot"><h3>${g.title}</h3><p>${g.desc}</p><span class="chip light">View Gallery ${icon('right')}</span></div>
+    </button>
+  </li>`).join('');
+
+/* ---------- about image parallax ---------- */
+(function parallax() {
+  const box = $('#aboutVis'), img = box && $('img', box);
+  if (!img || reduced) return;
+  const upd = () => { const r = box.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return; const p = (r.top + r.height / 2 - innerHeight / 2) / innerHeight; img.style.transform = `translateY(${(-p * 7).toFixed(2)}%)`; };
+  addEventListener('scroll', upd, { passive: true }); upd();
+})();
+
+/* ---------- word split ---------- */
+$$('.words').forEach(h => {
+  let i = 0;
+  const walk = node => [...node.childNodes].forEach(n => {
+    if (n.nodeType === 3) {
+      const frag = document.createDocumentFragment();
+      n.textContent.split(/(\s+)/).forEach(part => {
+        if (!part) return;
+        if (/^\s+$/.test(part)) return frag.append(' ');
+        const s = document.createElement('span');
+        s.className = 'w'; s.textContent = part; s.style.transitionDelay = (i++ * 35) + 'ms';
+        frag.append(s);
+      });
+      n.replaceWith(frag);
+    } else if (n.nodeType === 1) walk(n);
+  });
+  walk(h);
+});
+
+/* ---------- reveals (start only after the loader has left) ---------- */
+function initReveals() {
+  const targets = $$('[data-r], .lines, .words');
+  let pending = targets, t = 0;
+  const check = () => {
+    const vh = innerHeight;
+    pending = pending.filter(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < vh * 0.94 && r.bottom > 0) { el.classList.add('in'); return false; }
+      return true;
+    });
+    if (!pending.length) { removeEventListener('scroll', onScroll); clearInterval(poll); }
+  };
+  const onScroll = () => { const now = performance.now(); if (now - t < 40) return; t = now; check(); };
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', check);
+  const poll = setInterval(check, 250);
+  check();
+}
+
+/* ---------- loader ---------- */
+(function loader() {
+  const el = $('#loader'), fill = $('#ldFill'), num = $('#ldNum');
+  const FILL_MS = reduced ? 300 : 1300;
+  const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  stopScroll();
+  const t0 = performance.now();
+  let finished = false;
+  const finish = () => {
+    if (finished) return; finished = true;
+    el.classList.add('out');
+    setTimeout(() => { el.remove(); startScroll(); initReveals(); }, reduced ? 0 : 820);
+  };
+  (function tick(now) {
+    const p = Math.round(ease(clamp((now - t0) / FILL_MS)) * 100);
+    fill.style.width = p + '%';
+    num.textContent = String(p).padStart(3, '0');
+    if (p < 100) requestAnimationFrame(tick); else finish();
+  })(t0);
+  setTimeout(finish, FILL_MS + 2500); // failsafe if the tab was in the background
+})();
+
+/* ---------- clock (Malaysia time) ---------- */
+(function clock() {
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const tick = () => {
+    let d = new Date();
+    try { d = new Date(d.toLocaleString('en-US', { timeZone: 'Asia/Kuala_Lumpur' })); } catch (e) {}
+    const h = d.getHours(), time = `${h % 12 || 12}:${String(d.getMinutes()).padStart(2, '0')}${h < 12 ? 'am' : 'pm'}`;
+    $$('[data-time]').forEach(e => e.textContent = time);
+    $$('[data-date]').forEach(e => e.textContent = `${d.getDate()} ${months[d.getMonth()]}, ${d.getFullYear()}`);
+  };
+  tick(); setInterval(tick, 1000);
+  $('#yr').textContent = new Date().getFullYear();
+})();
+
+/* ---------- hero card carousel ---------- */
+(function heroCard() {
+  const items = [
+    { caption: 'Sea Freight', title: 'FCL, LCL & project cargo.' },
+    { caption: 'Air Freight', title: 'A global gateway network.' },
+    { caption: 'Road Freight', title: 'Dedicated fleet, Malaysia-wide.' },
+    { caption: 'Door to Door', title: 'From pickup to delivery.' },
+  ];
+  const slot = $('#hcardSlot'), dots = $('#hcardDots');
+  let i = 0, timer;
+  dots.innerHTML = items.map(() => '<i></i>').join('');
+  const node = it => { const d = document.createElement('div'); d.className = 'hcard-item'; d.innerHTML = `<small>${it.caption}</small><b>${esc(it.title)}</b>`; return d; };
+  let cur = node(items[0]); slot.append(cur);
+  const paint = () => [...dots.children].forEach((d, k) => d.classList.toggle('on', k === i));
+  paint();
+  function go(step) {
+    i = (i + step + items.length) % items.length;
+    const out = cur, inn = node(items[i]);
+    inn.style.opacity = 0; inn.style.transform = `translateY(${step > 0 ? 14 : -14}px)`;
+    slot.append(inn);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      inn.style.opacity = 1; inn.style.transform = 'none';
+      out.style.opacity = 0; out.style.transform = `translateY(${step > 0 ? -14 : 14}px)`;
+    }));
+    setTimeout(() => out.remove(), 500);
+    cur = inn; paint(); auto();
+  }
+  const auto = () => { clearInterval(timer); if (!reduced) timer = setInterval(() => go(1), 4000); };
+  $('#hcard').addEventListener('click', () => go(1));
+  $('#hcPrev').addEventListener('click', e => { e.stopPropagation(); go(-1); });
+  $('#hcNext').addEventListener('click', e => { e.stopPropagation(); go(1); });
+  auto();
+})();
+
+/* ---------- video reels: play clips in turn, a cloud bank rolls in to hide each cut ---------- */
+(function reels() {
+  const VID = 'picture/video/', LEAD = 1.5, PEAK = 1350, CLEAR = 1900;
+  const PUFFS = [[15,20],[50,12],[85,22],[10,55],[42,48],[78,52],[22,88],[58,86],[92,84],[32,30],[68,70]];
+  $$('[data-reel]').forEach(box => {
+    const clips = box.dataset.reel.split(' ');
+    const clouds = document.getElementById(box.dataset.clouds);
+    clouds.innerHTML = PUFFS.map(([x, y]) =>
+      `<i style="--x:${x}%;--y:${y}%;--s:${70 + Math.round(Math.random() * 40)}%;--dx:${Math.round((x - 50) * 1.6)}%;--dy:${Math.round((y - 50) * 1.6)}%"></i>`).join('');
+    const vids = [0, 1].map(() => {
+      const v = document.createElement('video');
+      v.muted = true; v.playsInline = true; v.preload = 'auto';
+      v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+      $('.reel', box).append(v); return v;
+    });
+    let i = 0, cur = vids[0], nxt = vids[1], busy = false, seen = false;
+    const load = (v, k) => { v.poster = VID + clips[k] + '.jpg'; v.src = VID + clips[k] + '.mp4'; };
+    load(cur, 0); load(nxt, 1 % clips.length); cur.classList.add('on');
+    const play = v => { const p = v.play(); if (p) p.catch(() => {}); };
+    function swap() {
+      nxt.currentTime = 0; if (seen) play(nxt);
+      nxt.classList.add('on'); cur.classList.remove('on'); cur.pause();
+      [cur, nxt] = [nxt, cur];
+      i = (i + 1) % clips.length; load(nxt, (i + 1) % clips.length);
+    }
+    function next() {
+      if (busy) return;
+      if (reduced) { swap(); return; }
+      busy = true; clouds.className = 'clouds in';
+      setTimeout(() => {
+        swap(); clouds.className = 'clouds out';
+        setTimeout(() => { clouds.className = 'clouds'; busy = false; }, CLEAR);
+      }, PEAK);
+    }
+    vids.forEach(v => {
+      v.addEventListener('timeupdate', () => { if (v === cur && v.duration && v.duration - v.currentTime < LEAD) next(); });
+      v.addEventListener('ended', () => { if (v === cur) next(); });
+    });
+    new IntersectionObserver(([e]) => { seen = e.isIntersecting; seen ? play(cur) : cur.pause(); }).observe(box);
+  });
+  $$('video[data-bg]').forEach(v => new IntersectionObserver(([e]) => {
+    if (e.isIntersecting && !reduced) { const p = v.play(); if (p) p.catch(() => {}); } else v.pause();
+  }).observe(v));
+})();
+
+/* ---------- stats: scroll-driven count-up ("top bottom" → "center center") ---------- */
+(function stats() {
+  const els = $$('[data-count]');
+  const best = new Map(els.map(e => [e, 0]));
+  let t = 0;
+  const update = () => {
+    const vh = innerHeight;
+    els.forEach(el => {
+      const r = el.getBoundingClientRect();
+      const p = Math.max(best.get(el), clamp((vh - r.top) / (vh / 2 + r.height / 2)));
+      best.set(el, p);
+      el.textContent = reduced ? el.dataset.count : Math.round(p * +el.dataset.count);
+    });
+  };
+  const onScroll = () => { const now = performance.now(); if (now - t < 30) return; t = now; update(); };
+  addEventListener('scroll', onScroll, { passive: true }); addEventListener('resize', update);
+  setInterval(update, 400); update();
+})();
+
+/* ---------- overlays: menu, quote modal, gallery ---------- */
+const nav = $('#nav'), quote = $('#quote'), panel = $('#quotePanel'), form = $('#quoteForm'), lb = $('#gallery-lb');
+let lastFocus = null;
+function openOv(ov, focusSel) {
+  if (ov.classList.contains('open')) return;
+  lastFocus = document.activeElement;
+  ov.classList.add('open'); stopScroll();
+  setTimeout(() => $(focusSel, ov)?.focus({ preventScroll: true }), 60);
+}
+function closeOv(ov) {
+  if (!ov.classList.contains('open')) return false;
+  ov.classList.remove('open'); startScroll();
+  if (ov === lb) clearInterval(gTimer);
+  if (ov === quote) setTimeout(() => { panel.classList.remove('sent'); form.reset(); $('#sendLbl').textContent = 'Send request'; }, 400);
+  lastFocus?.focus?.({ preventScroll: true });
+  return true;
+}
+const openQuote = () => { closeOv(nav); openOv(quote, 'input'); };
+
+$('#menuBtn').addEventListener('click', () => openOv(nav, '[data-close]'));
+$$('[data-close]').forEach(b => b.addEventListener('click', () => closeOv(b.closest('.ov'))));
+$$('[data-quote]').forEach(b => b.addEventListener('click', openQuote));
+$$('[data-go]').forEach(b => b.addEventListener('click', e => {
+  e.preventDefault();
+  closeOv(nav);
+  scrollToId(b.dataset.go);
+}));
+quote.addEventListener('click', e => { if (e.target === quote) closeOv(quote); });
+addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeOv(lb) || closeOv(quote) || closeOv(nav); }
+  if (lb.classList.contains('open')) {
+    if (e.key === 'ArrowRight') gStep(1);
+    if (e.key === 'ArrowLeft') gStep(-1);
+  }
+});
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const f = new FormData(form);
+  $('#sendLbl').textContent = 'Sending…';
+  const body = `Name: ${f.get('name')}\nEmail: ${f.get('email')}\nPhone: ${f.get('phone') || '-'}\n\nShipment details:\n${f.get('details')}`;
+  const href = `mailto:inquiry@cargocare.com.my?subject=${encodeURIComponent('Quote request — ' + f.get('name'))}&body=${encodeURIComponent(body)}`;
+  setTimeout(() => { window.location.href = href; panel.classList.add('sent'); }, 450);
+});
+
+/* gallery lightbox */
+let gData = null, gIdx = 0, gTimer = null, gFront = $('#gImgA'), gBack = $('#gImgB');
+function gShow() {
+  const src = encodeURI(gData.folder + gData.files[gIdx]);
+  const next = gBack, prev = gFront;
+  next.onload = () => { next.classList.remove('hide'); prev.classList.add('hide'); };
+  next.alt = `${gData.title} — photo ${gIdx + 1}`;
+  next.src = src;
+  gFront = next; gBack = prev;
+  const n = gData.files.length;
+  $('#gCount').textContent = `${String(gIdx + 1).padStart(2, '0')} / ${String(n).padStart(2, '0')}`;
+  $('#gBar').style.width = ((gIdx + 1) / n * 100) + '%';
+  new Image().src = encodeURI(gData.folder + gData.files[(gIdx + 1) % n]); // preload the next one
+}
+function gStep(s) {
+  gIdx = (gIdx + s + gData.files.length) % gData.files.length;
+  gShow(); gAuto();
+}
+function gAuto() { clearInterval(gTimer); gTimer = setInterval(() => { gIdx = (gIdx + 1) % gData.files.length; gShow(); }, 4500); }
+$$('[data-gallery]').forEach(b => b.addEventListener('click', () => {
+  gData = GALLERY[b.dataset.gallery]; gIdx = 0;
+  $('#gTitle').textContent = gData.title; $('#gDesc').textContent = gData.desc;
+  gFront.classList.add('hide'); gBack.classList.add('hide');
+  openOv(lb, '#gNext'); gShow(); gAuto();
+}));
+$('#gPrev').addEventListener('click', () => gStep(-1));
+$('#gNext').addEventListener('click', () => gStep(1));
+</script>
+</body>
+</html>
